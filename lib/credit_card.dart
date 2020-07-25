@@ -28,14 +28,14 @@ class CreditCard extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Expanded(
             child: Text(
               "\$ 24,300",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 45,
+                fontSize: 35,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -47,11 +47,11 @@ class CreditCard extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "***-***-903",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: TextStyle(color: Colors.white),
                 ),
                 Text(
                   "Matilda",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: TextStyle(color: Colors.white),
                 ),
               ],
             ),

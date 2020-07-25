@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               screenBar(),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -87,11 +87,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               width: 10,
                             ),
-                            Text(
-                              "Add money",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
+                            Expanded(
+                              child: Text(
+                                "Add money",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                ),
                               ),
                             ),
                           ],
@@ -99,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     Expanded(
                       child: Container(
@@ -115,11 +117,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               width: 10,
                             ),
-                            Text(
-                              "Exchange",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
+                            Expanded(
+                              child: Text(
+                                "Exchange",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                ),
                               ),
                             ),
                           ],
@@ -190,7 +194,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Icon(
-                            Icons.euro_symbol,
+                            Icons.attach_money,
                             color: Colors.white,
                             size: 50,
                           ),
@@ -311,7 +315,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Padding screenBar() {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(16.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
